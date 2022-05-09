@@ -73,3 +73,15 @@ Bạn cũng có thể chạy make with -s để thêm @ trước mỗi dòng
 + Thêm -i để thực hiện điều này xảy ra cho mọi lệnh.
 
 -> Nếu bạn thực hiện ctrl + C , nó sẽ xóa các mục tiêu mới hơn mà nó vừa thực hiện.
+### Đệ quy của make
+Để gọi đệ quy một makefile, hãy sử dụng $ (MAKE) thay vì make
+-> Sử dụng **export** để thực hiện đệ quy
+
+## Các biến Pt.2
+### Flavors và sửa đổi
+Có 2 biến Flavors :
++ Đệ quy (sử dụng =)  chỉ tìm kiếm các biến khi lệnh được sử dụng, cho phép bạn thêm vào một biến.
++ Mở rộng đơn giản (sử dụng: =)   giống như lập trình mệnh lệnh thông thường , chỉ những người được xác định mới được mở rộng.
++ ? = chỉ đặt các biến nếu chúng chưa được đặt
++ Khoảng trắng ở cuối dòng không bị xóa, nhưng ở đầu thì có. Để tạo một biến có một khoảng trắng, hãy sử dụng $ (nullstring).
++ Use `+=` to append
