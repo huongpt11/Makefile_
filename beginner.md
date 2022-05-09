@@ -55,3 +55,21 @@ Cú pháp:
 
 + Bản chất là mục tiêu (target) đã cho được khớp với mẫu đích(target- pattern)  thông qua ký tự đại diện%
 + Bất cứ thứ gì được kết hợp được gọi là **stem**. Sau đó, **stem** sẽ được thay thế thành **prereq-pattern** để tạo ra các yêu cầu tiên quyết của mục tiêu.
++ ### Bộ lọc và quy tắc mẫu tính
+Được dùng để khớp các tệp chính xác
+### Quy tắc mẫu
++ Cách để xác định các quy tắc ngầm của riêng bạn.
++ Dạng đơn giản hơn của quy tắc mẫu tĩnh
+### Quy tắc dấu hai chấm
+Cho phép nhiều quy tắc được xác định cho cùng một mục tiêu.Nếu đây là những dấu hai chấm, một cảnh báo sẽ được in và chỉ bộ lệnh thứ hai sẽ chạy
+## Lệnh và thực thi
+### Câu lệnh Echoing/Silencing
+Thêm ký hiệu @ trước lệnh để ngăn câu lệnh được in mà chỉ in ra kết quả.
+
+Bạn cũng có thể chạy make with -s để thêm @ trước mỗi dòng
+### Xử lí lỗi với -k, -i và -
++ Thêm -k khi chạy **make** để tiếp tục chạy ngay cả khi gặp lỗi.
++ Thêm dấu - trước lệnh để loại bỏ lỗi
++ Thêm -i để thực hiện điều này xảy ra cho mọi lệnh.
+
+-> Nếu bạn thực hiện ctrl + C , nó sẽ xóa các mục tiêu mới hơn mà nó vừa thực hiện.
