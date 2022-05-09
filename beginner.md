@@ -15,3 +15,27 @@ Trong đó:
 + **Action**: là câu lệnh thực thi để tạo ra Target từ Dependency. Action được thụt lùi vào 1 Tab (phím tab trên bàn phím) so với Target
 + **Rule**: các rule cần thực hiện khi compile
 + **Dependency**: là các file cần thiết để tạo ra target.
+## Biến
+- Chỉ có thể là chuỗi.
+- Thông thường, bạn có thể sử dụng := để khái báo biến , nhưng = cũng hoạt động.
+- Các biến tham chiếu sử dụng cả ${} hoặc $().
+
+## Mục tiêu 
+- **all** target 
+ Để tạo nhiều mục tiêu và muốn tất cả đều chạy .
+ - **multiple targets**
+Khi có nhiều mục tiêu cho một quy tắc (rule), sử dụng $@ là một biến tự động có chứa tên đích.
+
+## Biến tự động và kí tự đặc biệt
+ Kí tự đặc biệt - Wildcard:  * và % đều là kí tự đặc biệt trong Make.
+
+### * Wildcard 
+- Tìm kiếm hệ thống tệp của bạn để tìm các tên tệp phù hợp
+- Được sử dụng trong mục tiêu, điều kiện tiên quyết hoặc trong hàm kí tự đặc biệt.
+### % Wildcard
+- Khi được sử dụng ở chế độ "đối sánh", nó khớp với một hoặc nhiều ký tự trong một chuỗi.
+- Khi được sử dụng ở chế độ "thay thế", nó sẽ lấy phần gốc được so khớp và thay thế phần đó trong một chuỗi
+- % thường được sử dụng nhất trong các định nghĩa quy tắc và trong một số chức năng cụ thể.
+
+**Biến tự động** 
+https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html 
