@@ -39,3 +39,19 @@ Khi có nhiều mục tiêu cho một quy tắc (rule), sử dụng $@ là một
 
 **Biến tự động** 
 https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html 
+## Fancy Rules
+### Quy tắc ngầm 
+Một vài biến quan trọng sử dụng quy tắc ngầm: 
++ CC: Chương trình biên dịch chương trình C; mặc định **cc**
++  CXX: Chương trình biên dịch chương trình C ++;mặc định **g ++**
++ CFLAGS: Cờ bổ sung để cung cấp cho trình biên dịch C.
++ CXXFLAGS: Cờ bổ sung để cung cấp cho trình biên dịch C ++
++ CPPFLAGS: Cờ bổ sung để cung cấp cho bộ tiền xử lý C
++ LDFLAGS: Các cờ bổ sung để cung cấp cho trình biên dịch khi chúng được cho là gọi trình liên kết
+### Quy tắc mẫu tính
+Cú pháp:
+**targets...: target-pattern: prereq-patterns ... 
+commands**
+
++ Bản chất là mục tiêu (target) đã cho được khớp với mẫu đích(target- pattern)  thông qua ký tự đại diện%
++ Bất cứ thứ gì được kết hợp được gọi là **stem**. Sau đó, **stem** sẽ được thay thế thành **prereq-pattern** để tạo ra các yêu cầu tiên quyết của mục tiêu.
