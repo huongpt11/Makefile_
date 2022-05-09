@@ -85,3 +85,12 @@ Có 2 biến Flavors :
 + ? = chỉ đặt các biến nếu chúng chưa được đặt
 + Khoảng trắng ở cuối dòng không bị xóa, nhưng ở đầu thì có. Để tạo một biến có một khoảng trắng, hãy sử dụng $ (nullstring).
 + Use `+=` để thêm vào
++ 
+### Đối số dòng lệnh và ghi đè
+ Bạn có thể ghi đè các biến đến từ dòng lệnh bằng cách sử dụng ghi đè. Ở đây chúng tôi đã chạy make với make option_one = hi.
+
+###  Các biến mục tiêu và mẫu cụ thể
+ + Các biến có thể được chỉ định cho các mục tiêu cụ thể
+ + Bạn có thể chỉ định các biến cho các mẫu mục tiêu cụ thể
+ + 
+## Điều kiện của Makefile
