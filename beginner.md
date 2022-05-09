@@ -51,7 +51,7 @@ Một vài biến quan trọng sử dụng quy tắc ngầm:
 ### Quy tắc mẫu tính
 Cú pháp:
 **targets...: target-pattern: prereq-patterns ... 
-commands**
+                    commands**
 
 + Bản chất là mục tiêu (target) đã cho được khớp với mẫu đích(target- pattern)  thông qua ký tự đại diện%
 + Bất cứ thứ gì được kết hợp được gọi là **stem**. Sau đó, **stem** sẽ được thay thế thành **prereq-pattern** để tạo ra các yêu cầu tiên quyết của mục tiêu.
