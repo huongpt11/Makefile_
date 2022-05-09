@@ -84,4 +84,4 @@ Có 2 biến Flavors :
 + Mở rộng đơn giản (sử dụng: =)   giống như lập trình mệnh lệnh thông thường , chỉ những người được xác định mới được mở rộng.
 + ? = chỉ đặt các biến nếu chúng chưa được đặt
 + Khoảng trắng ở cuối dòng không bị xóa, nhưng ở đầu thì có. Để tạo một biến có một khoảng trắng, hãy sử dụng $ (nullstring).
-+ Use `+=` to append
++ Use `+=` để thêm vào
