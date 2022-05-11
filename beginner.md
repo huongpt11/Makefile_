@@ -61,7 +61,7 @@ Cú pháp:
 + Cách để xác định các quy tắc ngầm của riêng bạn.
 + Dạng đơn giản hơn của quy tắc mẫu tĩnh
 ### Quy tắc dấu hai chấm
-Cho phép nhiều quy tắc được xác định cho cùng một mục tiêu.Nếu đây là những dấu hai chấm, một cảnh báo sẽ được in và chỉ bộ lệnh thứ hai sẽ chạy
+Cho phép nhiều quy tắc được xác định cho cùng một mục tiêu.Nếu đây là dấu hai chấm đơn lẻ, một cảnh báo sẽ được in và chỉ bộ lệnh thứ hai sẽ chạy
 ## Lệnh và thực thi
 ### Câu lệnh Echoing/Silencing
 Thêm ký hiệu @ trước lệnh để ngăn câu lệnh được in mà chỉ in ra kết quả.
