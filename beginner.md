@@ -94,3 +94,46 @@ Có 2 biến Flavors :
  + Bạn có thể chỉ định các biến cho các mẫu mục tiêu cụ thể
  + 
 ## Điều kiện của Makefile
+### Câu điều kiện If/Else
+### $(makeflags)
+
+
+
+## Function
+### First Function
+- Chủ yếu được dùng để xử lí văn bản.
+- **Cú pháp :**
+            1 .`$(fn, arguments)`
+         `2.${fn, arguments}`
+- Nếu bạn muốn thay thế dấu cách hoặc dấu phẩy, hãy sử dụng các biến
+
+### Thay thế chuỗi
+ **Cú pháp: **
+         $(patsubst %.pattern,%.replacement,text)
+**Cách thay thế:**
+           $(text:%.pattern=%.replacement)
+ **Thay thế hậu tố:**
+         $(text:suffix=replacement)
+         -> Không sử dung kí tự % ở đây
+### Hàm foreach
+**Cú pháp:**
+$(foreach var,list,text)
++ Chuyển một danh sách từ sang các từ khác
++ **var** được đặt cho từng từ trong danh sách và **text** được mở rộng cho từng từ
+### Hàm If
++ Kiểm tra xem đối số đầu tiên có phải là trống không. Nếu có thì chạy đối số thứ hai, ngược lại thì chạy đối số thứ ba.
+
+### Hàm call
+**Cú pháp: **
+       $(call variable,param,param)
+### Hàm shell
+- Thay thế dòng mới bằng dấu cách
+
+## Tính năng khác
+### Include Makefiles
+- Lệnh include yêu cầu thực hiện đọc một hoặc nhiều tệp Makefiles
+### Chỉ thị Vpath
++ Sử dụng vpath để chỉ ra nơi tồn tại một số điều kiện tiên quyết
+**Cú pháp: **
+vpath <pattern> <directories, space/colon separated>
+- <pattern> có thể dùng %, cái  mà nối với không hoặc nhiều kí tự.
