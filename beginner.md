@@ -137,3 +137,10 @@ $(foreach var,list,text)
 **Cú pháp: **
 vpath <pattern> <directories, space/colon separated>
 - <pattern> có thể dùng %, cái  mà nối với không hoặc nhiều kí tự.
+### Đa dòng (multiline)
+- Kí tự "\" cho phép chúng ta sử dụng nhiều dòng khi câu lệnh quá dài.
+### .phony
+- Ngăn ngừa việc xung đột giữa file cùng tên với mục tiêu phony.
+### .delete_on_error
+- Công cụ make sẽ ngừng chạy nếu một câu lệnh trả về một trạng thái khác không.
+- DELETE_ON_ERROR sẽ xóa mục tiêu của quy tắc nếu quy tắc không thành công.Điều này sẽ xảy ra cho tất cả các mục tiêu, không chỉ mục tiêu trước đây như PHONY.
